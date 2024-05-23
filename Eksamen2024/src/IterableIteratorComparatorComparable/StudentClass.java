@@ -7,7 +7,7 @@ import java.util.List;
 public class StudentClass implements Iterable<Student> {
 
     private List<Student> students;
-    
+
     public StudentClass() {
         students = new ArrayList<>();
         students.add(new Student("Njål", 26));
@@ -30,5 +30,4 @@ public class StudentClass implements Iterable<Student> {
         return "Students: " + students;
     }
 
-    
 }

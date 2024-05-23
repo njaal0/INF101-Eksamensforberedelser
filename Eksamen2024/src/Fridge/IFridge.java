@@ -43,6 +43,7 @@ public interface IFridge {
 
 	/**
 	 * Remove all items that have expired from the fridge
+	 * 
 	 * @return a list of all expired items
 	 */
 	List<FridgeItem> removeExpiredFood();

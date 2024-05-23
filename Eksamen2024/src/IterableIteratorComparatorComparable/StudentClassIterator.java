@@ -12,7 +12,7 @@ public class StudentClassIterator implements Iterator<Student> {
         this.students = students;
         this.currentIndex = 0;
     }
-    
+
     @Override
     public boolean hasNext() {
         return currentIndex < students.size();
@@ -22,10 +22,9 @@ public class StudentClassIterator implements Iterator<Student> {
     public Student next() {
         if (!hasNext()) {
             throw new NoSuchElementException("There are no more students in this class.");
-        }
-        else {
+        } else {
             return students.get(currentIndex++);
         }
     }
-    
+
 }

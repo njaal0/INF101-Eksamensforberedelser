@@ -37,12 +37,14 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Movie movie = (Movie) o;
         return year == movie.year &&
-               Double.compare(movie.rating, rating) == 0 &&
-               Objects.equals(title, movie.title);
+                Double.compare(movie.rating, rating) == 0 &&
+                Objects.equals(title, movie.title);
     }
 
     @Override
@@ -50,4 +52,3 @@ public class Movie implements Comparable<Movie> {
         return Objects.hash(title, year, rating);
     }
 }
-

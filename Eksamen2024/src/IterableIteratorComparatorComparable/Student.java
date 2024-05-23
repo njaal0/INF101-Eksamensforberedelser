@@ -1,7 +1,7 @@
 package IterableIteratorComparatorComparable;
 
-public class Student implements Comparable<Student>{
-    
+public class Student implements Comparable<Student> {
+
     public int age;
     public String name;
 
@@ -13,7 +13,7 @@ public class Student implements Comparable<Student>{
     public String getName() {
         return this.name;
     }
-    
+
     public int getAge() {
         return this.age;
     }
@@ -27,12 +27,9 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student that) {
         if (this.getAge() > that.getAge()) {
             return 1;
-        }
-        else {
+        } else {
             return -1;
         }
     }
 
-    
-    
 }

@@ -8,4 +8,3 @@ public class YearComparator implements Comparator<Movie> {
         return Integer.compare(m1.getYear(), m2.getYear());
     }
 }
-

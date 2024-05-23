@@ -8,4 +8,3 @@ public class RatingComparator implements Comparator<Movie> {
         return Double.compare(m1.getRating(), m2.getRating());
     }
 }
-
