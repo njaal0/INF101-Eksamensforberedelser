@@ -102,15 +102,18 @@ public class GenerellTeori {
 
 // When you override equals(), you must also override hashCode() to maintain the general contract for hashCode which states:
 // If two objects are equal according to equals(), they must have the same hash code.
-// If two objects are not equal according to equals(), it is not required that they have different hash codes. However, producing distinct hash codes for unequal objects can improve the performance of hash-based collections.
+// If two objects are not equal according to equals(), it is not required that they have different hash codes. 
+// However, producing distinct hash codes for unequal objects can improve the performance of hash-based collections.
 // Relationship between hashCode() and equals()
 // The relationship between hashCode() and equals() is crucial for the correct functioning of hash-based collections:
 
 // Consistency: If two objects are equal (a.equals(b) returns true), then a.hashCode() must be the same as b.hashCode().
-// Hash-based Collections: Collections like HashMap use hashCode() to determine the bucket where the object will be stored, and equals() to check if objects are equal.
+// Hash-based Collections: Collections like HashMap use hashCode() to determine the bucket where the object will be stored, 
+// and equals() to check if objects are equal.
 // This helps in achieving constant-time performance for basic operations like add(), remove(), and contains().
 // Common Mistakes
-// Forgetting to Override hashCode(): When equals() is overridden but hashCode() is not, two equal objects might have different hash codes, leading to incorrect behavior in hash-based collections.
+// Forgetting to Override hashCode(): When equals() is overridden but hashCode() is not, 
+// two equal objects might have different hash codes, leading to incorrect behavior in hash-based collections.
 // Inconsistent Implementation: Violating the contract of equals() or hashCode() can lead to unpredictable behavior and hard-to-find bugs.
 // Best Practices
 // Use Relevant Fields: Ensure the fields used in equals() are also used in hashCode().
